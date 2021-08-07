@@ -1,0 +1,118 @@
+/* Small devices (portrait tablets and large phones, 768px and up) */
+
+@media screen and (min-width: 768px) {
+    * {
+        Margin: 20;
+        padding: 20;
+    }
+    body {
+        font-family: 'Pattaya', sans-serif;
+        background: white;
+    }
+    .nav {
+        background: red;
+        padding: 30px;
+        display: flex;
+        justify-content: space-around;
+    }
+    h1 {
+        font-family: 'Pattaya', sans-serif;
+        background: violet;
+    }
+    .visual-aid {
+        /* Styles for visual aid. */
+        font-size: 30px;
+        height: 40px;
+        background: yellowgreen;
+        width: 100%;
+        margin: 20px auto;
+        position: relative;
+    }
+    .marquee {
+        overflow: hidden;
+    }
+    .marquee>* {
+        white-space: nowrap;
+        position: absolute;
+        animation: marquee 15s linear 0s infinite;
+    }
+    @keyframes marquee {
+        0% {
+            left: 100%;
+            transform: translateX(0%);
+        }
+        100% {
+            left: 0%;
+            transform: translateX(-100%);
+        }
+    }
+    .lista {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        display: flex;
+    }
+    img {
+        align-self: baseline;
+    }
+    p {
+        margin: 100 0 0 10px;
+    }
+    .post-container {
+        margin: 20px 20px 0 0;
+        overflow: auto;
+    }
+    .post-thumb {
+        margin-top: 30px;
+        float: left;
+    }
+    .post-thumb img {
+        display: block;
+        width: 42px;
+        height: 42px;
+    }
+    .post-content {
+        margin-left: 50px;
+    }
+    .flex-container {
+        display: flex;
+        background-color: rgb(50, 78, 205);
+    }
+    .flex-container>div {
+        background-color: #f1f1f1;
+        margin: 2px;
+        padding: 2px;
+        font-size: 20px;
+    }
+    .grid-container {
+        display: grid;
+        grid-column-gap: 5px;
+        grid-template-columns: auto auto auto;
+        background-color: yellowgreen;
+        padding: 2px;
+    }
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 2px solid rgba(0, 0, 0, 0.8);
+        padding: 2px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .footer {
+        font-size: 20px;
+        color: rgb(255, 0, 0);
+    }
+    #recuadro1 {
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        border-radius: 40px;
+        background-color: #ddd;
+        width: 150px;
+        padding: 10px;
+    }
+}
