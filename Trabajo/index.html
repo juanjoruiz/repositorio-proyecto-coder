@@ -1,0 +1,184 @@
+ <!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="content-type" content=text/html; charset="utf-8">
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+      <link rel="stylesheet" href="animate.min.css">
+      <link rel="stylesheet" href="./Stylegit config --global user.name Juanjoruizs/index.css">
+      <link rel="stylesheet" href="./Styles/mobile.css">
+      <link rel="stylesheet" href="./Styles/tablets.css">
+      <link rel="stylesheet" href="./Styles/laptop.css">   
+      <!--<link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">-->
+      <!--<link rel="stylesheet" href="https://raw.github.com/daneden/animate.css/master/animate.css">-->      
+
+
+      <title>Pagina proyecto Coder House Juan Jose Ruiz</title>
+   </head>
+   <body>
+      <div class="sitioweb">
+
+         <header>
+               <h1>Coder House - Camada 18225 </h1>
+         </header>
+
+         <main>
+
+            <div class="efecto">    
+               <h2> Coder House - Camada 18225 </h2>
+            </div>
+            <div class="marquee visual-aid">
+	            <span>Proyecto Personal - Juan Jose Ruiz -  </span>
+            </div>
+
+
+
+
+            <!-- Contiene un artículo -->
+            <article>
+               <h2>Componentes Cisco UCCE / Contact Center </h2>
+               <p>En esta pagina, intentare mostrar y explicar algunos componentes de un contact center de Cisco.</p>
+               <div class="flex-container">
+               <div>Que es un sistema de Contact Center.</div>
+               <div>Ademas de llamadas telefonicas, puede usar otros sistemas de comunicacion.</div>
+               <div>Que componentes tiene.</div>  
+
+               <div>Que funciones cumplen sus componentes y como interactuan.</div>             
+               <div>Ademas de los contact center on premise, existen on cloud.</div>                                    
+               </div>
+
+
+               <h3>Que es un contact center </h3>
+               <p> Es sistema donde agentes, asesores, supervisores o ejecutivos, especialmente con una técnica en tele mercadeo o servicio al cliente, realizan o reciben llamadas desde o hacia: clientes, socios comerciales, compañías asociadas u otro </p>
+            </article>
+         </main>
+         <nav>
+            <h3>Cuales son los componentes mas importantes de un contact center </h3>
+            <ul class="lista">
+               <li><a href="./Pages/CUIC.html">CUIC (Reporting)</a></li>
+               <li><a href="./Pages/Dialer.html">Dialer (campañas outbound / salientes - Discador)</a></li>
+               <li><a href="./Pages/ECE.html">ECE (modulo chat and e-mail)</a></li>
+               <li><a href="./Pages/Finesse.html">Finesse (logueo de agentes)</a></li>
+               <li><a href="./Pages/Scripting.html">Scripts (Scripts Cisco ICM)</a></li>
+            </ul>
+            <br>
+
+            <h3>Cuales son otros componentes de un contact center </h3>
+
+            <div class="grid-container">
+
+            <div class="grid-item">CVP (Cisco Unified Customer Voice Portal): reemplaza al IVR y permite la programacion de aplicaciones complejas para telefonia.</div>
+            <div class="grid-item">Distributor: se encarga de la sincronizacion y distribucion de skills, scripts, etc.</div>
+            <div class="grid-item">IVR (Interactive Voice Response): permite la ejecucion de mensajes de audio para el cliente que llama </div>            
+            <div class="grid-item">Logger: para guardado de logs del sistema, agentes, llamadas, etc</div>
+            <div class="grid-item">PG: provee conectividad con la telefonia u otros sistemas</div>
+            <div class="grid-item">Router: para ruteo de llamadas</div>
+            </div>
+            <br><br> 
+
+
+
+                     <br><br>
+         <h3>El Contact Center del futuro</h3>
+
+
+               <p>Lo que se viene</p>
+
+
+               <div class="slideshow-container">
+
+               <div class="mySlides fade">
+               <div class="numbertext">1 / 2</div>
+               <img src="./Images/Inteligencia_Artificial.jpg" style="width:100%">
+               <div class="text">Inteligencia Artificial</div>
+               </div>
+
+               <div class="mySlides fade">
+               <div class="numbertext">2 / 2</div>
+               <img src="./Images/Cloud.jpg" style="width:100%">
+               <div class="text">Cloud computing</div>
+               </div>
+
+
+
+               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+               <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+               </div>
+               <br>
+
+               <div style="text-align:center">
+               <span class="dot" onclick="currentSlide(1)"></span> 
+               <span class="dot" onclick="currentSlide(2)"></span> 
+
+               </div>
+
+               <script>
+               var slideIndex = 1;
+               showSlides(slideIndex);
+
+               function plusSlides(n) {
+               showSlides(slideIndex += n);
+               }
+
+               function currentSlide(n) {
+               showSlides(slideIndex = n);
+               }
+
+               function showSlides(n) {
+               var i;
+               var slides = document.getElementsByClassName("mySlides");
+               var dots = document.getElementsByClassName("dot");
+               if (n > slides.length) {slideIndex = 1}    
+               if (n < 1) {slideIndex = slides.length}
+               for (i = 0; i < slides.length; i++) {
+                     slides[i].style.display = "none";  
+               }
+               for (i = 0; i < dots.length; i++) {
+                     dots[i].className = dots[i].className.replace(" active", "");
+               }
+               slides[slideIndex-1].style.display = "block";  
+               dots[slideIndex-1].className += " active";
+               }
+               </script>
+
+
+
+         <h3>Video explicativo </h3>
+
+         <div class="contenedor_iframe">
+            <iframe class="responsive-iframe" src="https://www.youtube.com/embed/UgW21oi0AXY"></iframe>
+         </div>
+
+         <br><br><br>         
+
+         <div id="recuadro1"> 
+               <h3>Gracias</h3>
+               <p>Por visitar esta pagina</p>
+         </div> 
+         <br><br><br>
+
+         <div id="boxGradiente"> 
+               <h3>Gracias</h3>
+               <p>Por visitar esta pagina</p>
+         </div> 
+
+
+         <br><br>
+         <a href="./Pages/Consulta.html">Consultas (formulario) </a>
+         <br><br>     <br><br>
+         <!--  <a href="./Pages/Tabla.html">Tabla </a> -->
+
+
+         </nav>
+
+
+         <footer>
+            <div class="footer">
+            <p>©Copyright 2021 libre. version 13 de Agosto de 2021 11:00</p>
+            </div>
+         </footer>
+      </div>
+   </body>
+</html>
