@@ -77,24 +77,73 @@
             </div>
             <br><br> 
 
-            <!--
-            <div id="grid">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-            </div>-->
-
-
-
-
-            <a href="./Pages/Consulta.html">Consultas (formulario) </a>
-            <br><br>     <br><br>
-            <!--  <a href="./Pages/Tabla.html">Tabla </a> -->
-         </nav>
-
-
-
 
 
                      <br><br>
+         <h3>El Contact Center del futuro</h3>
+
+
+               <p>Lo que se viene</p>
+
+
+               <div class="slideshow-container">
+
+               <div class="mySlides fade">
+               <div class="numbertext">1 / 2</div>
+               <img src="./Images/Inteligencia_Artificial.jpg" style="width:100%">
+               <div class="text">Inteligencia Artificial</div>
+               </div>
+
+               <div class="mySlides fade">
+               <div class="numbertext">2 / 2</div>
+               <img src="./Images/Cloud.jpg" style="width:100%">
+               <div class="text">Cloud computing</div>
+               </div>
+
+
+
+               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+               <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+               </div>
+               <br>
+
+               <div style="text-align:center">
+               <span class="dot" onclick="currentSlide(1)"></span> 
+               <span class="dot" onclick="currentSlide(2)"></span> 
+
+               </div>
+
+               <script>
+               var slideIndex = 1;
+               showSlides(slideIndex);
+
+               function plusSlides(n) {
+               showSlides(slideIndex += n);
+               }
+
+               function currentSlide(n) {
+               showSlides(slideIndex = n);
+               }
+
+               function showSlides(n) {
+               var i;
+               var slides = document.getElementsByClassName("mySlides");
+               var dots = document.getElementsByClassName("dot");
+               if (n > slides.length) {slideIndex = 1}    
+               if (n < 1) {slideIndex = slides.length}
+               for (i = 0; i < slides.length; i++) {
+                     slides[i].style.display = "none";  
+               }
+               for (i = 0; i < dots.length; i++) {
+                     dots[i].className = dots[i].className.replace(" active", "");
+               }
+               slides[slideIndex-1].style.display = "block";  
+               dots[slideIndex-1].className += " active";
+               }
+               </script>
+
+
 
          <h3>Video explicativo </h3>
 
@@ -116,9 +165,18 @@
          </div> 
 
 
+         <br><br>
+         <a href="./Pages/Consulta.html">Consultas (formulario) </a>
+         <br><br>     <br><br>
+         <!--  <a href="./Pages/Tabla.html">Tabla </a> -->
+
+
+         </nav>
+
+
          <footer>
             <div class="footer">
-            <p>©Copyright 2021 libre. version 05 de Agosto de 2021 20:30</p>
+            <p>©Copyright 2021 libre. version 13 de Agosto de 2021 11:00</p>
             </div>
          </footer>
       </div>
