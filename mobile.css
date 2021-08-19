@@ -1,0 +1,337 @@
+/* Extra small devices (phones, 320px and down) */
+
+@media screen and (min-width: 320px) {
+    * {
+        Margin: 20;
+        padding: 20;
+    }
+    body {
+        font-family: 'Pattaya', sans-serif;
+        background: white;
+    }
+    .nav {
+        background: red;
+        padding: 30px;
+        display: flex;
+        justify-content: space-around;
+    }
+    h1 {
+        font-family: 'Pattaya', sans-serif;
+        background: violet;
+    }
+
+    .efecto {
+        font-family: 'Pattaya', sans-serif;
+        background: yellowgreen;
+        animation-duration: 2s;
+        animation-name: aparecer;
+        animation-iteration-count: infinite;
+    }
+    @keyframes aparecer {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+
+
+
+    .visual-aid {
+        /* Styles for visual aid. */
+        font-size: 30px;
+        height: 40px;
+        background: yellowgreen;
+        width: 100%;
+        margin: 20px auto;
+        position: relative;
+    }
+    .marquee {
+        overflow: hidden;
+    }
+    .marquee>* {
+        white-space: nowrap;
+        position: absolute;
+        animation: marquee 15s linear 0s infinite;
+    }
+    @keyframes marquee {
+        0% {
+            left: 100%;
+            transform: translateX(0%);
+        }
+        100% {
+            left: 0%;
+            transform: translateX(-100%);
+        }
+    }
+    .lista {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        display: flex;
+    }
+    img {
+        align-self: baseline;
+    }
+    p {
+        margin: 100 0 0 10px;
+    }
+    .post-container {
+        margin: 20px 20px 0 0;
+        overflow: auto;
+    }
+    .post-thumb {
+        margin-top: 30px;
+        float: left;
+    }
+    .post-thumb img {
+        display: block;
+        width: 42px;
+        height: 42px;
+    }
+    .post-content {
+        margin-left: 50px;
+    }
+    .flex-container {
+        display: flex;
+        background-color: rgb(50, 78, 205);
+    }
+    .flex-container>div {
+        background-color: #f1f1f1;
+        margin: 2px;
+        padding: 2px;
+        font-size: 10px;
+    }
+    .grid-container {
+        display: grid;
+        grid-column-gap: 5px;
+        grid-template-columns: auto auto auto;
+        background-color: yellowgreen;
+        padding: 2px;
+    }
+    .grid-item {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 2px solid rgba(0, 0, 0, 0.8);
+        padding: 2px;
+        font-size: 10px;
+        text-align: center;
+    }
+    .post-content {
+        margin-left: 5px;
+    }
+    .post-container1 {
+        margin: 5px 5px 0 0;
+        overflow: auto;
+    }
+    .post-thumb1 {
+        margin-top: 5px;
+        float: left;
+    }
+    .post-thumb1 img {
+        display: block;
+        width: 80px;
+        height: 80px;
+    }
+    .post-content1 {
+        margin-left: 5px;
+    }
+    .post-container2 {
+        margin: 20px 20px 0 0;
+        overflow: auto;
+    }
+    .post-thumb2 {
+        margin-top: 10px;
+        float: right;
+    }
+    .post-thumb2 img {
+        display: block;
+        width: 100px;
+        height: 100px;
+    }
+    .post-content2 {
+        margin-right: 10px;
+    }
+    .post-container3 {
+        margin: 20px 20px 0 0;
+        overflow: auto;
+    }
+    .post-thumb3 {
+        margin-top: 10px;
+        float: left;
+    }
+    .post-thumb3 img {
+        display: block;
+        width: 100px;
+        height: 100px;
+    }
+    .post-content3 {
+        margin-left: 10px;
+    }
+    .footer {
+        font-size: 20px;
+        color: rgb(255, 0, 0);
+    }
+    #recuadro1 {
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        border-radius: 40px;
+        background-color: #ddd;
+        width: 150px;
+        padding: 10px;
+    }
+
+
+    #boxGradiente {
+        background-image: linear-gradient(to top, red, green);
+        color: black;
+        padding: 5px;
+        height: 150px;
+        width: 95%;
+        margin-top: 5px;
+        margin-right: 0;
+        margin-bottom: 5px;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .contenedor_iframe {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+      }
+      
+      /* Then style the iframe to fit in the container div with full height and width */
+      .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+
+      .collapsible {
+        background-color: #cccccc;      
+        background-color: #777;          
+        color: white;
+        color: #cccccc;          
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+      }
+      
+      .active, .collapsible:hover {
+     
+        background-color: #555;        
+      }
+      
+      .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #f1f1f1;
+        background-color: #cccccc;          
+      }
+
+
+    /* Style The Dropdown Button */
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: #f1f1f1}
+        
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+          }
+          
+          /* Modal Content/Box */
+          .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* Could be more or less, depending on screen size */
+          }
+          
+          /* The Close Button */
+          .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+          }
+          
+          .close:hover,
+          .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+          }
+
+
+
+}
